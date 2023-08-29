@@ -1,18 +1,19 @@
 import { Locator, Page, expect } from '@playwright/test';
 
 export class monitoringSlaPage {
-	page: Page;
-	reportsMenuButton: Locator;
-	monitoringSlaButton: Locator;
-	startDateInput: Locator;
-	endDateInput: Locator;
-	agentDropdown: Locator;
-	pickupPointDropdown: Locator;
-	searchButton: Locator;
-	exportThisPageButton: Locator;
-	exportAll: Locator;
-	leftPaginationButton: Locator;
-	rightPaginationButton: Locator;
+	readonly page: Page;
+	readonly reportsMenuButton: Locator;
+	readonly monitoringSlaButton: Locator;
+	readonly startDateInput: Locator;
+	readonly endDateInput: Locator;
+	readonly agentDropdown: Locator;
+	readonly pickupPointDropdown: Locator;
+	readonly searchButton: Locator;
+	readonly exportThisPageButton: Locator;
+	readonly exportAll: Locator;
+	readonly leftPaginationButton: Locator;
+	readonly rightPaginationButton: Locator;
+
 	constructor(page: Page) {
 		this.page = page;
 

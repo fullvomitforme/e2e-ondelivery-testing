@@ -27,10 +27,11 @@ export default defineConfig({
 		// baseURL: 'http://127.0.0.1:3000',
 		// baseURL: 'https://agent.ondelivery.id',
 		// baseURL: 'https://stagingagent.ondelivery.id',
-		baseURL: 'https://testagent.ondelivery.id',
+		// baseURL: 'https://testagent.ondelivery.id',
+		baseURL: 'http://localhost:5001',
 
 		/* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-		trace: 'on-first-retry',
+		trace: 'on-all-retries',
 	},
 
 	/* Configure projects for major browsers */
